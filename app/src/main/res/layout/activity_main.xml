@@ -75,6 +75,7 @@
             <Button
                 android:id="@+id/two_points_a_button_view"
                 android:text="+2"
+                android:onClick="addTwoPointsA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -138,6 +139,7 @@
             <Button
                 android:id="@+id/two_points_b_button_view"
                 android:text="+2"
+                android:onClick="addTwoPointsB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
