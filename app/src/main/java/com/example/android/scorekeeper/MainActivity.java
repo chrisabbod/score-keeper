@@ -22,8 +22,20 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    public void displayForTeamB(int score){
+        TextView scoreView = (TextView)findViewById(R.id.team_b_score_text_view);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    //Team A Functions
     public void addTouchdownA(View v){
         teamAScore = teamAScore + 6;
         displayForTeamA(teamAScore);
+    }
+
+    //Team B Functions
+    public void addTouchdownB(View v){
+        teamBScore = teamBScore + 6;
+        displayForTeamB(teamBScore);
     }
 }
