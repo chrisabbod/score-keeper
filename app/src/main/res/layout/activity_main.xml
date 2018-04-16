@@ -22,6 +22,7 @@
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
+                android:id="@+id/team_a_score_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -31,11 +32,13 @@
                 android:layout_gravity="center_horizontal"/>
 
             <Button
+                android:id="@+id/touchdown_a_button_view"
                 android:text="Touchdown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/field_goal_a_button_view"
                 android:text="Field Goal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -46,11 +49,13 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/one_point_a_button_view"
                 android:text="+1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/two_points_a_button_view"
                 android:text="+2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -79,11 +84,13 @@
                 android:layout_gravity="center_horizontal"/>
 
             <Button
+                android:id="@+id/touchdown_b_button_view"
                 android:text="Touchdown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/field_goal_b_button_view"
                 android:text="Field Goal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -94,11 +101,13 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/one_point_b_button_view"
                 android:text="+1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/two_points_b_button_view"
                 android:text="+2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
