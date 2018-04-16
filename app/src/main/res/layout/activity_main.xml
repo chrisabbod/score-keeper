@@ -33,6 +33,7 @@
 
             <Button
                 android:id="@+id/touchdown_a_button_view"
+                android:onClick="addTouchdownA"
                 android:text="Touchdown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
