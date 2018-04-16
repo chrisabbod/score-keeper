@@ -17,23 +17,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Team A Functions
+
     public void displayForTeamA(int score){
         TextView scoreView = (TextView)findViewById(R.id.team_a_score_text_view);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayForTeamB(int score){
-        TextView scoreView = (TextView)findViewById(R.id.team_b_score_text_view);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    //Team A Functions
     public void addTouchdownA(View v){
         teamAScore = teamAScore + 6;
         displayForTeamA(teamAScore);
     }
 
     //Team B Functions
+
+    public void displayForTeamB(int score){
+        TextView scoreView = (TextView)findViewById(R.id.team_b_score_text_view);
+        scoreView.setText(String.valueOf(score));
+    }
+
     public void addTouchdownB(View v){
         teamBScore = teamBScore + 6;
         displayForTeamB(teamBScore);
