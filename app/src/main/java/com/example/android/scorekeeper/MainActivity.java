@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(teamAScore);
     }
 
+    public void addFieldGoalA(View v){
+        teamAScore = teamAScore + 3;
+        displayForTeamA(teamAScore);
+    }
+
     //Team B Functions
 
     public void displayForTeamB(int score){
@@ -38,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void addTouchdownB(View v){
         teamBScore = teamBScore + 6;
+        displayForTeamB(teamBScore);
+    }
+
+    public void addFieldGoalB(View v){
+        teamBScore = teamBScore + 3;
         displayForTeamB(teamBScore);
     }
 }

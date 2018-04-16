@@ -49,6 +49,7 @@
             <Button
                 android:id="@+id/field_goal_a_button_view"
                 android:text="Field Goal"
+                android:onClick="addFieldGoalA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -109,6 +110,7 @@
             <Button
                 android:id="@+id/field_goal_b_button_view"
                 android:text="Field Goal"
+                android:onClick="addFieldGoalB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
