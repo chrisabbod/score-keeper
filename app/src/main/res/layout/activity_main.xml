@@ -67,6 +67,7 @@
 
             <Button
                 android:id="@+id/one_point_a_button_view"
+                android:onClick="addOnePointA"
                 android:text="+1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -130,6 +131,7 @@
             <Button
                 android:id="@+id/one_point_b_button_view"
                 android:text="+1"
+                android:onClick="addOnePointB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

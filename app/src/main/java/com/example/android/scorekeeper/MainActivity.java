@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(teamAScore);
     }
 
+    public void addOnePointA(View v){
+        teamAScore = teamAScore + 1;
+        displayForTeamA(teamAScore);
+    }
+
     //Team B Functions
 
     public void displayForTeamB(int score){
@@ -58,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void addSafetyB(View v){
         teamBScore = teamBScore + 2;
+        displayForTeamB(teamBScore);
+    }
+
+    public void addOnePointB(View v){
+        teamBScore = teamBScore + 1;
         displayForTeamB(teamBScore);
     }
 }
