@@ -1,21 +1,21 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray"
         android:layout_width="1dp"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray" />
+
     <Button
-        android:text="RESET"
-        android:onClick="resetPoints"
-        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginBottom="16dp"
+        android:onClick="resetPoints"
+        android:text="RESET" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,163 +25,165 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team A"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:layout_gravity="center_horizontal"/>
+                android:text="Team A"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/team_a_score_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="56sp"
-                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/touchdown_a_button_view"
-                android:onClick="addTouchdownA"
-                android:text="Touchdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:onClick="addTouchdownA"
+                android:text="Touchdown" />
 
             <Button
                 android:id="@+id/field_goal_a_button_view"
-                android:text="Field Goal"
-                android:onClick="addFieldGoalA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:onClick="addFieldGoalA"
+                android:text="Field Goal" />
 
             <Button
                 android:id="@+id/safety_a_button_view"
-                android:text="Safety"
-                android:onClick="addSafetyA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:onClick="addSafetyA"
+                android:text="Safety" />
 
             <TextView
-                android:text="Point After Touchdown"
-                android:textSize="16sp"
-                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Point After Touchdown"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/one_point_a_button_view"
-                android:onClick="addOnePointA"
-                android:text="+1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:onClick="addOnePointA"
+                android:text="+1" />
 
             <Button
                 android:id="@+id/two_points_a_button_view"
-                android:text="+2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addTwoPointsA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="+2" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team B"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:layout_gravity="center_horizontal"/>
+                android:text="Team B"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/team_b_score_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textSize="56sp"
-                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/touchdown_b_button_view"
-                android:text="Touchdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addTouchdownB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="Touchdown" />
 
             <Button
                 android:id="@+id/field_goal_b_button_view"
-                android:text="Field Goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addFieldGoalB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="Field Goal" />
 
             <Button
                 android:id="@+id/safety_b_button_view"
-                android:text="Safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addSafetyB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="Safety" />
 
             <TextView
-                android:text="Point After Touchdown"
-                android:textSize="16sp"
-                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Point After Touchdown"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/one_point_b_button_view"
-                android:text="+1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addOnePointB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="+1" />
 
             <Button
                 android:id="@+id/two_points_b_button_view"
-                android:text="+2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
                 android:onClick="addTwoPointsB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:text="+2" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
