@@ -5,6 +5,7 @@
 
     <Button
         android:text="RESET"
+        android:onClick="resetPoints"
         android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

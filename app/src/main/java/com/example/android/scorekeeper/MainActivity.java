@@ -17,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void resetPoints(View v){
+        teamAScore = 0;
+        teamBScore = 0;
+        displayForTeamA(teamAScore);
+        displayForTeamB(teamBScore);
+    }
+
     //Team A Functions
 
     public void displayForTeamA(int score){
