@@ -3,6 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:text="RESET"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,6 +49,12 @@
             <Button
                 android:id="@+id/field_goal_a_button_view"
                 android:text="Field Goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/safety_a_button_view"
+                android:text="Safety"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -93,6 +107,12 @@
             <Button
                 android:id="@+id/field_goal_b_button_view"
                 android:text="Field Goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/safety_b_button_view"
+                android:text="Safety"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

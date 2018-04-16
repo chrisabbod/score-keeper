@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView)findViewById(R.id.team_a_score_text_view);
         scoreView.setText(String.valueOf(score));
     }
+
     public void addTouchdownA(View v){
         teamAScore = teamAScore + 6;
         displayForTeamA(teamAScore);
